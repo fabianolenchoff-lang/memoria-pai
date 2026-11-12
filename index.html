@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Em memória de Carlos Lenchoff Neto</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --text: #2e2b27;
+    --muted: #6b665e;
+    --accent: #8a7355;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 16px 0 4px;
+    font-weight: 500;
+  }
+  .datas {
+    text-align: center;
+    color: var(--muted);
+    font-size: 16px;
+    margin: 0 0 28px;
+  }
+  .video {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 28px;
+    background: #000;
+  }
+  video {
+    width: 100%;
+    display: block;
+  }
+  .texto {
+    font-size: 17px;
+    margin-bottom: 32px;
+    white-space: pre-line;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .galeria img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 48px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Carlos Lenchoff Neto</h1>
+  <p class="datas">03/03/1928 — 10/06/2016</p>
+
+  <div class="video">
+    <video controls poster="capa.jpg">
+      <source src="video.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo. <a href="video.mp4">Baixe o vídeo aqui</a>.
+    </video>
+  </div>
+
+  <p class="texto">[TEXTO DE HOMENAGEM — escreva aqui algumas linhas sobre ele, uma lembrança, uma frase que ele dizia, o que a família quer que quem visitar leia.]</p>
+
+  <div class="galeria">
+    <img src="foto1.jpg" alt="">
+    <img src="foto2.jpg" alt="">
+    <img src="foto3.jpg" alt="">
+  </div>
+
+  <footer>Com amor, da família.</footer>
+</main>
+</body>
+</html>
